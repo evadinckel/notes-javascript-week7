@@ -5,5 +5,12 @@ var assert = {
     } else {
       (console.log(describe))
     }
+  },
+  isEqual: function(describe, value1, value2) {
+    if (value1 === value2) {
+      (console.log(describe));
+    } else {
+      throw new Error ("Assertion failed: " + value1  + ' ' + value2 + " are not equal");
+    }
   }
 };

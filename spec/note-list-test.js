@@ -14,3 +14,13 @@ function returnsAddedNote() {
 };
 
 returnsAddedNote();
+
+
+function displayeachNote() {
+  var noteList = new NoteList();
+  var describe = 'display each note'
+  noteList.addNote('new note');
+  assert.isEqual(describe, noteList.viewNotes()._text, 'new note');
+};
+
+displayeachNote();
