@@ -5,3 +5,12 @@ function objectExists() {
 };
 
 objectExists();
+
+function returnsAddedNote() {
+  var describe  = "note has been added";
+  var noteList = new NoteList();
+  noteList.addNote('new note');
+  assert.isTrue(describe, noteList.list()[0] instanceof Note);
+};
+
+returnsAddedNote();
